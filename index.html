@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sugario</title>
+    <link rel="stylesheet" href="sugario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon-96x96.png?v=2" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2" />
+    <link rel="shortcut icon" href="favicon.ico?v=2" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2" />
+    <link rel="manifest" href="site.webmanifest" />
+</head>
+
+<body>
+    <div class="video-bg">
+        <video id="bgVideo" autoplay muted loop playsinline>
+            <source src="sugarioback.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header id="mainHeader">
+        <div class="header-left">
+            <div class="header-logo">
+                <img src="sugario.logo+text.png" alt="Sugario Logo">
+            </div>
+        </div>
+        <nav class="nav-center" id="navMenu">
+            <a href="#" class="nav-link">Смаки</a>
+            <a href="#" class="nav-link">Колекції</a>
+            <a href="#" class="nav-link">Магія</a>
+            <a href="#" class="nav-link">Про нас</a>
+            <a href="#" class="nav-link">Контакти</a>
+        </nav>
+        <div class="header-right">
+            <div class="lang">
+                <span class="active">UA</span>
+                <span>EN</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Slide Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Slide Sidebar Menu -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <nav class="sidebar-nav">
+            <a href="#" class="sidebar-link">Смаки</a>
+            <a href="#" class="sidebar-link">Колекції</a>
+            <a href="#" class="sidebar-link">Магія</a>
+            <a href="#" class="sidebar-link">Про нас</a>
+            <a href="#" class="sidebar-link">Контакти</a>
+        </nav>
+        <div class="sidebar-lang">
+            <span class="active">UA</span>
+            <span>EN</span>
+        </div>
+    </div>
+
+    <!-- Hero: scroll-snap section with glassmorphism title cards -->
+    <section class="hero" id="hero">
+
+        <div class="hero-slide">
+            <div class="title-card" data-float-speed="0.45">
+                <h1 class="card-title">Sugario</h1>
+                <p class="card-subtitle">Найсмачніші цукерки в Україні та в світі</p>
+                <button class="card-btn" data-scroll-to="1">Розпочати</button>
+            </div>
+            <div class="scroll-hint">
+                <span>scroll</span>
+                <div class="scroll-hint-arrow"></div>
+            </div>
+        </div>
+
+        <div class="hero-slide">
+            <div class="title-card" data-float-speed="0.55">
+                <h2 class="card-title" style="font-size: clamp(36px, 7vw, 72px);">Ручна робота</h2>
+                <p class="card-subtitle">Міжнародні цукерки "Преміум класу"</p>
+                <p class="card-body">Кожна цукерка — це маленький шедевр, створений з найкращих інгредієнтів з усього
+                    світу.</p>
+            </div>
+        </div>
+
+        <div class="hero-slide">
+            <div class="title-card" data-float-speed="0.65">
+                <h2 class="card-title" style="font-size: clamp(36px, 7vw, 72px);">Магія смаку</h2>
+                <p class="card-subtitle"> Такого ще в нікого не було</p>
+                <p class="card-body">Унікальні рецептури, що поєднують традиції та інновації у кожному укусі.</p>
+            </div>
+        </div>
+
+        <div class="hero-slide">
+            <div class="title-card" data-float-speed="0.50">
+                <h2 class="card-title" style="font-size: clamp(36px, 7vw, 72px);">Мрія стає реальністю</h2>
+                <p class="card-subtitle"> На заздрість Порошенку</p>
+                <p class="card-body">Відкрийте для себе світ Sugario — де кожна мить солодка.</p>
+                <button class="card-btn" data-scroll-to="main">Поринути у магію</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ОСНОВНИЙ КОНТЕНТ -->
+    <main id="mainContent">
+
+        <!-- Секція Смаків -->
+        <section class="main-section" id="flavors">
+            <h2 class="section-title">Наші Бестселери</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <video autoplay muted loop playsinline>
+                            <source src="grok-video-7f6fb455-909d-4349-a6d0-fc793f0882f6.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3>Полуничний Вибух</h3>
+                    <p>Ніжний мус із лісової полуниці, вкритий тонким шаром білого бельгійського шоколаду.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <video autoplay muted loop playsinline>
+                            <source src="grok-video-7f6fb455-909d-4349-a6d0-fc793f0882f6 (2).mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3>Космічна Карамель</h3>
+                    <p>Солона карамель із додаванням подрібненого фундука та таємного "зоряного" інгредієнта.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <video autoplay muted loop playsinline>
+                            <source src="grok-video-7f6fb455-909d-4349-a6d0-fc793f0882f6 (1).mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3>Лавандова Мрія</h3>
+                    <p>Екзотичне поєднання лаванди та чорниці для тих, хто шукає особливого спокою.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <video autoplay muted loop playsinline>
+                            <source src="grok-video-7f6fb455-909d-4349-a6d0-fc793f0882f6 (3).mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3>Темний Лорд</h3>
+                    <p>85% какао з додаванням чилі та морської солі. Смак для справжніх поціновувачів.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секція Магії (Про процес) -->
+        <section class="main-section" id="magic">
+            <div class="info-container">
+                <div class="info-visual">
+                    <video autoplay muted loop playsinline>
+                        <source src="grok-video-7f6fb455-909d-4349-a6d0-fc793f0882f6 (4).mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="info-text">
+                    <h2>Як ми створюємо магію?</h2>
+                    <p>Ми не просто виробляємо солодощі — ми синтезуємо емоції. Весь процес, від вибору какао-бобів до
+                        пакування, проходить під суворим контролем наших "смакових алхіміків".</p>
+                    <p>Використовуємо тільки натуральні барвники з квітів та фруктів. Жодної хімії, тільки чиста
+                        насолода, що тане в роті.</p>
+                    <button class="card-btn">Дізнатись більше</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секція Колекцій -->
+        <section class="main-section" id="collections"
+            style="background: rgba(255,255,255,0.02); border-radius: 50px; padding: 60px;">
+            <h2 class="section-title">Ексклюзивні Колекції</h2>
+            <div class="product-grid">
+                <div class="product-card" style="border-color: #C83066;">
+                    <h3>"Galaxy Box"</h3>
+                    <p>12 цукерок у формі планет Сонячної системи. Кожна має свій унікальний планетарний смак.</p>
+                </div>
+                <div class="product-card" style="border-color: #FAC543;">
+                    <h3>"Vintage Gold"</h3>
+                    <p>Класичні рецепти 19 сторіччя у сучасному виконанні. Золоте упакування.</p>
+                </div>
+                <div class="product-card" style="border-color: #fff;">
+                    <h3>"Midnight Party"</h3>
+                    <p>Набір цукерок із додаванням елітного алкоголю для особливих вечорів.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секція Контактів -->
+        <section class="main-section" id="contacts">
+            <h2 class="section-title">Знайдіть нас</h2>
+            <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                <p style="font-size: 20px; margin-bottom: 30px;">Ми завжди відкриті до спілкування, пропозицій та
+                    солодких відгуків.</p>
+                <div
+                    style="display: flex; justify-content: space-around; font-family: 'Baloo 2', cursive; font-size: 22px;">
+                    <div>
+                        <p style="color: #FFFFFFCC;">Адреса</p>
+                        <p>Харків, вул. Астрономічна, 19</p>
+                    </div>
+                    <div>
+                        <p style="color: #FFFFFFCC;">Телефон</p>
+                        <p>+380 (66) 057-01-40</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">TikTok</a>
+            <a href="#">Політика конфіденційності</a>
+        </div>
+        <p>&copy; 2026 Sugario Sweet Industries. Made with love in Ukraine.</p>
+    </footer>
+
+</body>
+<script src="sugario.js"></script>
+
+</html>
